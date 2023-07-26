@@ -15,7 +15,7 @@ from Mickey.database.users import add_served_user
 from Mickey.modules.helpers import PNG_BTN
 
 
-@MickeyBot.on_cmd("ping")
+@MickeyBot.on_cmd("aiping")
 async def ping(_, message: Message):
     await message.reply_sticker(sticker=random.choice(STICKER))
     start = datetime.now()
